@@ -1,4 +1,4 @@
-# macursus
+# macursus (DONT ACTUALLY TRY THIS)
 procursus bootstrapper for macOS, procursus has the bootsrap on their apt servers for some reason.
 # Should i use this?
 Only if you have a valid reason to use procursus, procursus for macOS is not finished.
