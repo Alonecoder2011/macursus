@@ -17,9 +17,12 @@ tar -xvf bootstrap.tar
 sudo mkdir /opt
 echo "-> installing..."
 sudo cp -r opt /
-echo "-> almost done"
 sudo chown $usr /opt
 sudo mkdir -p /opt/procursus/var/lib/dpkg
 sudo touch /opt/procursus/var/lib/dpkg/lock-frontend
-echo "----> DONE!"
-echo "add /opt/procursus/bin to your path."
+printf 'export PATH="/opt/procursus/bin:/opt/procursus/sbin:/opt/procursus/games:$PATH"\nexport CPATH="$CPATH:/opt/procursus/include"\nexport LIBRARY_PATH="$LIBRARY_PATH:/opt/procursus/lib"\n' | sudo tee -a /etc/zprofile /etc/profile
+export PATH="/opt/procursus/bin:/opt/procursus/sbin:/opt/procursus/games:$PATH"
+export CPATH="$CPATH:/opt/procursus/include"
+export LIBRARY_PATH="$LIBRARY_PATH:/opt/procursus/lib"
+echo "-> installing selio"
+apt install selio gcc
