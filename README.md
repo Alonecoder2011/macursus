@@ -8,3 +8,4 @@ run the installer with this command in your terminal: bash -c "$(curl -fsSL http
 # Credits
 procursus, ofc.<br>
 mineek, one of his repos called sunst0rm had the code to export it to path, and i used it cuz im lazy.
+# please dont use this on my resume, checkout devOS
